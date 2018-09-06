@@ -24,3 +24,7 @@ $(call inherit-product, vendor/fuse/config/BoardConfigFuse.mk)
 
 # Inherit boot animation
 $(call inherit-product, vendor/fuse/config/bootanimation.mk)
+
+# World APN list
+PRODUCT_PACKAGES += \
+    apns-conf.xml
