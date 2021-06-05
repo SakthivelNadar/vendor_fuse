@@ -28,3 +28,6 @@ $(call inherit-product, vendor/fuse/config/bootanimation.mk)
 # World APN list
 PRODUCT_PACKAGES += \
     apns-conf.xml
+
+# Disable extra StrictMode features on all non-engineering builds
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
