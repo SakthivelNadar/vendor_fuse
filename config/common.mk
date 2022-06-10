@@ -25,6 +25,9 @@ $(call inherit-product, vendor/fuse/config/BoardConfigFuse.mk)
 # Inherit boot animation
 $(call inherit-product, vendor/fuse/config/bootanimation.mk)
 
+# Device FCM
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/fuse/config/device_framework_matrix.xml
+
 # World APN list
 PRODUCT_PACKAGES += \
     apns-conf.xml
